@@ -21,3 +21,16 @@
 - English A1
 
 ---
+## Education ##
+
+### 2004-2009 ###
+
+**Nizhnevartovsk state university**, geography, gis mapping
+
+### 2020 ###
+
+**CS50**
+
+### 2021 -2022 ###
+
+**RS School**, JS / FRONT-END
