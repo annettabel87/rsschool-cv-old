@@ -34,3 +34,25 @@
 ### 2021 -2022 ###
 
 **RS School**, JS / FRONT-END
+
+## Work experience ##
+
+### 2012-2021 OOO Zemleustroitelnoe predpriyatie,
+engineer surveyor (geodesist)
+
+### 2009-2012 MUP Zemleustroitelnoe predpriyatie,
+engineer surveyor (geodesist)
+
+---
+## __Code Example__
+```
+function arrayDiff(a, b) {
+let diffArr = [];
+    for (i of a) {
+        if (!b.includes(i)) {
+            diffArr.push(i);
+        }
+}
+  return diffArr;
+}
+```
