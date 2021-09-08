@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>CV</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="columns">
-            <aside>
+            <aside class="aside">
                 <div class="foto">
                     <img src="img/foto.jpg" alt="foto" width="204" height="204">
                 </div>
                 <div class="aside-item">
-                    <h2>Contacts</h2>
+                    <h2 class="title">Contacts</h2>
                     <ul class="aside-list">
                         <li>Adress: Russia</li>
-                        <li>e-mail: annettabel@rambler.ru</li>
-                        <li>phone: +79129321359</li>
-                        <li>github: [Annettabel87](https://github.com/annettabel87)</li>
+                        <li>e-mail: <a href="mailto:annettabel@rambler.ru">annettabel@rambler.ru</a></li>
+                        <li>phone: <a href="tel:+79129321359">+7 9129321359</a></li>
+                        <li>github: <a href="https://github.com/annettabel87">Annettabel87</a></li>
                     </ul>
                 </div>
                 <div class="aside-item">
-                    <h2>Skills</h2>
-                    <ul class="aside-list">
+                    <h2 class="title">Skills</h2>
+                    <ul class="aside-list skills">
                         <li>HTML/CSS</li>
                         <li>Javascript</li>
                         <li>GIT</li>
@@ -34,24 +42,80 @@
                     </ul>
                 </div>
             </aside>
-            <section>
-                <header>
-                    <h1>Anna Repeshko</h1>
-                    <h2>Junior Frontend Developer</h2>
+            <main>
+                <header class="header">
+                    <div class="header-info">
+                        <h1>Anna Repeshko</h1>
+                        <h2>Junior Frontend Developer</h2>
+                    </div>
+                    <nav class="navigation">
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a href="#education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#experience">Work experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#code">Code Example</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </header>
-                <div class="section-item">
-                    <h2>Education</h2>
-                    <h3>2004-2009</h3>
-                    <p>Nizhnevartovsk state university: geography, gis mapping</p>
-                    <h3>2020</h3>
-                    <p>CS50</p>
-                    <h3>2021 -2022</h3>
-                    <p>RS School: JS / FRONT-END</p>
+                <div class="main-page">
+                    <div id="education" class="section-item">
+                        <h2 class="title">Education</h2>
+                        <div class="item-card">
+                            <h3>2004-2009</h3>
+                            <p>Nizhnevartovsk state university: geography, gis mapping</p>
+                        </div>
+                        <div class="item-card">
+                            <h3>2020</h3>
+                            <p>CS50</p>
+                        </div>
+                        <div class="item-card">
+                            <h3>2021 -2022</h3>
+                            <p>RS School: JS / FRONT-END</p>
+                        </div>
+                    </div>
+                    <div id="experience" class="section-item">
+                        <h2 class="title"> Work experience</h2>
+                        <div class="item-card">
+                            <h3>engineer surveyor (geodesist)</h3>
+                            <p>2012-2021 - OOO Zemleustroitelnoe predpriyatie</p>
+                        </div>
+                        <div class="item-card">
+                            <h3>engineer surveyor (geodesist)</h3>
+                            <p>2009-2012 - MUP Zemleustroitelnoe predpriyatie</p>
+                        </div>
+                    </div>
+                    <div id="code" class="section-item">
+                        <h2 class="title">Code Example</h2>
+                        <pre><code class="code">
+                        function arrayDiff(a, b) {
+                            let diffArr = [];
+                            for (i of a) {
+                                if (!b.includes(i)) {
+                                     diffArr.push(i);
+                                }
+                            }
+                            return diffArr;
+                        }
+                        </code></pre>
+                    </div>
                 </div>
-                <div class="section-item"></div>
-                <div class="section-item"></div>
-            </section>
+            </main>
         </div>
+        <footer class="footer">
+            <a class="github" href="https://github.com/annettabel87">
+                <img class="github-icon" src="img/github.svg" alt="Github Icon" width="26" height="26">
+                <p>Visit my GitHub</p>
+              </a>
+              <p>© 2021</p>
+              <a href="https://rs.school/js/">
+                <img src="img/rs_school_js.svg" alt="Rsschool Icon" width="73" height="26">
+              </a>
+        </footer>
     </div>
 </body>
 </html>

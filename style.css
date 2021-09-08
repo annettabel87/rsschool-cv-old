@@ -1,0 +1,110 @@
+body {
+  box-sizing: border-box; 
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.wrapper {
+  margin: 20px auto;
+  max-width: 1040px;
+}
+.columns {
+  display: flex;
+  
+}
+
+.aside {
+  background-color: #e1d8cf;
+  max-width: 35%;
+  padding: 30px;
+  text-align: center;
+}
+.foto img{
+  margin-bottom: 10px;
+  border: 10px solid var(--pink-color);
+  border-radius: 50%;
+}
+.aside-item:not(last-child) {
+margin: 0 0 50px 0;
+}
+.title {  
+  background-color: #373741;
+  padding: 5px 15px;
+  color: #e1d8cf;
+}
+.aside-list li {
+  text-align: left;
+  font-size: 20px;
+  line-height: 150%;
+}
+.aside-list li a:hover{
+text-decoration: underline;
+}
+.skills li{
+  list-style-type: disc;
+}
+main {
+  width: 65%;  
+  height: 100%;
+}
+
+.header {
+  background-color: #373741;
+  color: #e1d8cf;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.header-info {
+  padding: 30px 30px;
+}
+h1 {
+  font-size: 50px;
+}
+.nav-menu {
+  line-height: 150%;
+}
+.nav-item a:hover {
+text-decoration: underline;
+}
+.item-card {
+  padding: 0 0 5px 30px;
+}
+p {
+  font-size: 18px;
+}
+pre {
+  margin: 0 auto;
+  font-size: 18px; 
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #e1d8cf;
+  background-color: #373741;
+}
+.footer a {
+  text-decoration: none;
+  color: #e1d8cf;
+}
+.footer a:hover {
+  opacity: 0.5;
+}
+
+.footer .github-icon {
+  margin-right: 10px;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+}
