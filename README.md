@@ -1,1 +1,1 @@
-https://annettabel87.io/rsschool-cv/cv
+https://annettabel87.io/rsschool-cv
