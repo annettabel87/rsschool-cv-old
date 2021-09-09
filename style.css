@@ -11,7 +11,7 @@ a {
   color: inherit;
 }
 .wrapper {
-  margin: 20px auto;
+  margin: 0 auto;
   max-width: 1040px;
 }
 .columns {
@@ -107,4 +107,52 @@ pre {
 .github {
   display: flex;
   align-items: center;
+}
+
+
+@media (max-width: 720px) {
+  .columns {
+      flex-direction: column;
+     
+  } 
+  .aside {
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+  main{
+    width: 100%;
+    padding-bottom: 0;
+  }
+  body {
+    font-size: 20px;    
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+      padding: 0 1rem;
+  }
+
+  .columns {
+      padding: 0 1rem;
+  }    
+  .header {
+    flex-wrap: wrap;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+      padding: 0;
+      margin: 0;
+  }
+
+  .columns {
+      padding: 0;
+      margin: 0;
+  }
+
 }
